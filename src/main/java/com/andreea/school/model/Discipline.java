@@ -12,8 +12,10 @@ import java.util.List;
 @Data
 @Entity
 public class Discipline {
-@Id
     private String disciplineName;
+
+    @Id
+    private int disciplineNumber;
 
 
 @ManyToOne( fetch = FetchType.LAZY)

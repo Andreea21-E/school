@@ -12,6 +12,7 @@ import java.util.List;
 @NoArgsConstructor
 @AllArgsConstructor
 @Data
+//@Data- se creeaza metodele de get si set pentru fieldurile private
 @Entity
 public class Student {
 
