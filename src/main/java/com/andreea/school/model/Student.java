@@ -29,8 +29,7 @@ public class Student {
     @ManyToOne(fetch = FetchType.LAZY)
     private Professor professor;
 
-    @OneToMany(mappedBy = "student", cascade = CascadeType.ALL)
-    private List<Discipline> disciplines;
+
 
     @OneToMany(mappedBy = "student", cascade = CascadeType.ALL)
     private List<Grade> grades;

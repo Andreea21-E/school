@@ -27,8 +27,8 @@ public class SchoolApplication implements CommandLineRunner {
 		student.setStudentLastName("Mihai");
 
 		Student student1= new Student();
-		student1.setStudentFirstName("Adi1");
-		student1.setStudentLastName("Mihai1");
+		student1.setStudentFirstName("Adrian");
+		student1.setStudentLastName("Popescu");
 
 		studentRepository.save(student);
 		studentRepository.save(student1);

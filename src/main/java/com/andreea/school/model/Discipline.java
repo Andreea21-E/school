@@ -17,8 +17,6 @@ public class Discipline {
     @Id
     private int disciplineNumber;
 
-
-@ManyToOne( fetch = FetchType.LAZY)
-    private Student student;
-
+    @OneToMany(mappedBy = "discipline", cascade = CascadeType.ALL)
+    private List<Professor> professors;
 }
